@@ -1,0 +1,22 @@
+a {
+  color: purple;
+}
+.main li {
+  color: green;
+}
+.last {
+  list-style-type: square;
+}
+
+.scnd {
+  list-style-image: url(li.svg);
+}
+
+.last a {
+  text-decoration: none;
+  color: green;
+}
+
+ul li ul {
+  list-style-type: none;
+}
