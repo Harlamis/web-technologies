@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+dl {
+  display: inline-block;
+  text-align: left;
+}
+
+dt {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+hr {
+  border: none;
+  border-top: 4px solid green;
+  width: 50%;
+}
+
+blockquote {
+  font-style: italic;
+}
