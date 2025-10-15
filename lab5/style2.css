@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 800px;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid #fff;
+}
+
+thead th {
+  color: white;
+  font-weight: bold;
+}
+
+thead th span {
+  font-size: 20px;
+}
+
+thead th:first-child {
+  background-color: #f4e2e2;
+}
+
+thead th:nth-child(2) {
+  background-color: #e45756;
+}
+
+thead th:nth-child(3) {
+  background-color: #c2353a;
+}
+
+thead th:nth-child(4) {
+  background-color: #8d272a;
+}
+
+thead th:nth-child(5) {
+  background-color: #58181a;
+}
+
+tbody td {
+  background-color: #efcbcb;
+  color: #333;
+  font-size: 24px;
+}
+
+tbody td:first-child {
+  background-color: #c07273;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+/*td:not for avoiding outer cells*/
+tbody tr:nth-child(odd) td:not(:first-child) {
+  background-color: #f6e6e6;
+}
+
+td {
+  width: 100px;
+}
