@@ -1,0 +1,65 @@
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px black;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #0056b3;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+input[type='date'],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type='reset'] {
+  background-color: #6c757d;
+}
+
+button:hover {
+  opacity: 0.9;
+}
