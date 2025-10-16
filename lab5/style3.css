@@ -1,4 +1,4 @@
-body {
+.questionaire {
   background-color: #f0f2f5;
   color: #333;
   margin: 20px;
@@ -31,11 +31,15 @@ label {
   font-weight: bold;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='tel'],
-input[type='date'],
+.default-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 textarea,
 select {
   width: 100%;
