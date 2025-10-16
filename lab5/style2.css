@@ -62,4 +62,3 @@ tbody td:first-child {
 tbody tr:nth-child(odd) td:not(:first-child) {
   background-color: #f6e6e6;
 }
-
