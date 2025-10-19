@@ -1,0 +1,39 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.main-container {
+  width: 1140px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.column-container {
+  column-count: 3;
+  column-gap: 35px;
+  column-rule: 5px dotted red;
+}
+
+.column img {
+  width: 200px;
+  height: auto;
+}
+
+.column-container > p:nth-child(1) img {
+  float: left;
+  margin: 10px 15px 10px 0;
+}
+
+.column-container > p:nth-child(2) img {
+  float: right;
+  margin: 10px 0 10px 15px;
+}
+
+.column-container > p:nth-child(3) img {
+  float: right;
+  margin: 10px 0 10px 15px;
+  height: 150px;
+}

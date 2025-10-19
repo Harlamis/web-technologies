@@ -1,0 +1,42 @@
+header {
+  overflow: auto;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.nav-image {
+  float: left;
+}
+
+.nav-image img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.navbar {
+  float: right;
+  margin-top: 30px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar li {
+  float: left;
+  margin-left: 10px;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #eb7c33;
+  padding: 12px 20px;
+  border-radius: 5px;
+}

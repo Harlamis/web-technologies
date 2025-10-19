@@ -25,14 +25,12 @@
                 tabindex="1"
               />
             </label>
-            <br />
-            <br />
+
             <label for="bio"
               >Коротко про себе (textarea):
               <textarea id="bio" name="bio" placeholder="Коротко опишіть себе" required rows="4" cols="40" tabindex="2">
               </textarea>
             </label>
-            <br />
           </div>
 
           <label for="password"
@@ -49,7 +47,6 @@
               tabindex="3"
             />
           </label>
-          <br />
 
           <label for="email"
             >Email:
@@ -67,7 +64,6 @@
               tabindex="4"
             />
           </label>
-          <br />
 
           <label for="tel"
             >Мобільний номер (дозволено '+' та 7–15 цифр):
@@ -84,35 +80,33 @@
               tabindex="5"
             />
           </label>
-          <br />
 
           <label for="bday"
             >Дата народження:
             <input class="default-input" id="bday" name="bday" type="date" value="" required tabindex="6" />
           </label>
-          <br />
         </fieldset>
         <fieldset>
           <legend>Питання з варіантами (radio / checkbox)</legend>
 
           <p>Група радіо 1 (виберіть одне):</p>
-          <label><input type="radio" name="radio_group_1" value="r1_v1" tabindex="7" /> Варіант 1</label><br />
-          <label><input type="radio" name="radio_group_1" value="r1_v2" tabindex="8" /> Варіант 2</label><br />
-          <label><input type="radio" name="radio_group_1" value="r1_v3" tabindex="9" /> Варіант 3</label><br />
+          <label><input type="radio" name="radio_group_1" value="r1_v1" tabindex="7" /> Варіант 1</label>
+          <label><input type="radio" name="radio_group_1" value="r1_v2" tabindex="8" /> Варіант 2</label>
+          <label><input type="radio" name="radio_group_1" value="r1_v3" tabindex="9" /> Варіант 3</label>
 
           <p>Група радіо 2 (Виберіть одне):</p>
-          <label><input type="radio" name="radio_group_2" value="r2_v1" tabindex="10" /> R2 - Варіант A</label><br />
+          <label><input type="radio" name="radio_group_2" value="r2_v1" tabindex="10" /> R2 - Варіант A</label>
           <label
             ><input type="radio" name="radio_group_2" value="r2_v2" checked tabindex="11" /> R2 - Варіант B (за
             замовч.)</label
-          ><br />
-          <label><input type="radio" name="radio_group_2" value="r2_v3" tabindex="12" /> R2 - Варіант C</label><br />
+          >
+          <label><input type="radio" name="radio_group_2" value="r2_v3" tabindex="12" /> R2 - Варіант C</label>
 
           <p>Прапорці:</p>
-          <label><input type="checkbox" name="check_opt[]" value="chk1" tabindex="13" /> Пункт 1</label><br />
-          <label><input type="checkbox" name="check_opt[]" value="chk2" tabindex="14" /> Пункт 2</label><br />
-          <label><input type="checkbox" name="check_opt[]" value="chk3" tabindex="15" /> Пункт 3</label><br />
-          <label><input type="checkbox" name="check_opt[]" value="chk4" tabindex="16" /> Пункт 4</label><br />
+          <label><input type="checkbox" name="check_opt[]" value="chk1" tabindex="13" /> Пункт 1</label>
+          <label><input type="checkbox" name="check_opt[]" value="chk2" tabindex="14" /> Пункт 2</label>
+          <label><input type="checkbox" name="check_opt[]" value="chk3" tabindex="15" /> Пункт 3</label>
+          <label><input type="checkbox" name="check_opt[]" value="chk4" tabindex="16" /> Пункт 4</label>
         </fieldset>
         <fieldset>
           <legend>Списки (select / optgroup / multiple / datalist)</legend>
@@ -126,7 +120,7 @@
               <option value="s5">Опція 5</option>
             </select>
           </label>
-          <br />
+
           <label for="select6multi"
             >Select з множинним вибором (6 значень):
             <select id="select6multi" name="select6multi[]" multiple size="6" tabindex="18">
@@ -138,7 +132,7 @@
               <option value="m6">Мульти 6</option>
             </select>
           </label>
-          <br />
+
           <label for="optgroup_select"
             >Select з 4 optgroup (по 3 значення):
             <select id="optgroup_select" name="optgroup_select" tabindex="19">
@@ -164,7 +158,7 @@
               </optgroup>
             </select>
           </label>
-          <br />
+
           <label for="favcolor"
             >Поради (datalist):
             <input
@@ -207,7 +201,6 @@
               tabindex="1"
             />
           </label>
-          <br />
 
           <label for="post_email"
             >Email (POST, autocomplete off):
@@ -224,20 +217,17 @@
               tabindex="2"
             />
           </label>
-          <br />
 
           <label for="audio_files"
             >Завантажити аудіофайли (audio/*, multiple):
             <input id="audio_files" name="audio_files[]" type="file" accept="audio/*" multiple required tabindex="3" />
           </label>
-          <br />
 
           <p>Ще парочка полів для POST (radio/checkbox):</p>
           <label><input type="radio" name="p_radio" value="yes" tabindex="4" /> Так</label>
           <label><input type="radio" name="p_radio" value="no" tabindex="5" /> Ні</label>
-          <br />
+
           <label><input type="checkbox" name="p_check" value="agree" tabindex="6" /> Згоден(на)</label>
-          <br />
         </fieldset>
 
         <p>
