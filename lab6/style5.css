@@ -1,3 +1,12 @@
+.main-container {
+  width: 1140px;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
 .gradient-container {
   overflow: auto;
   padding: 10px;
@@ -51,31 +60,23 @@
 
 .gradient-2 {
   color: #333;
-  text-shadow: none;
-  /* background-color: white; */
-  background-image: linear-gradient(to bottom left, blue, orange, white, yellow),
-    linear-gradient(to bottom left, orange, purple, white, green);
-  background-size: 50px 50px, 50px 50px;
-  background-position: 0px 0px, 50px 0px, 0px 50px, 50px 50px;
+  background: linear-gradient(white, white),
+    linear-gradient(to bottom left, blue, orange, white, yellow),
+    linear-gradient(to bottom left, orange, purple, white, green), linear-gradient(white, white);
+  background-size: 50px 50px, 50px 50px, 50px 50px, 50px 50px;
+  background-position: 0 0, 50px 0, 0 50px, 50px 50px;
   background-repeat: repeat;
 }
 
 .gradient-3 {
-  background: repeating-linear-gradient(
-    to right,
-    blue 0,
-    blue 20px,
-    lime 20px,
-    lime 40px,
-    yellow 40px,
-    yellow 60px
-  );
+  background: repeating-linear-gradient(to right, green 0%, white 10%, blue 10%, yellow 20%);
 }
 
 .gradient-4 {
-  background: linear-gradient(135deg, green 50%, yellow 50%);
+  background: linear-gradient(135deg, #ff9900, #ffff00 50%, #00cc00);
 }
 
 .gradient-5 {
-  background: linear-gradient(to right, blue, cyan, green, yellow, orange, red);
+  background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+  background-blend-mode: overlay;
 }

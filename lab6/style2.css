@@ -68,36 +68,57 @@
 }
 
 .block-7 {
-  border: 5px dashed #f63;
-  border-radius: 10px;
+  border-image-slice: 28 25 27 27;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url('border-image-1.png');
+  border-style: solid;
 }
 
 .block-8 {
-  border: 5px solid #f63;
-  border-top-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: double;
-  border-right-style: double;
-  border-radius: 10px;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  border-image-slice: 13 13 13 13;
+  border-image-width: 15px 15px 15px 15px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round;
+  border-image-source: url('https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png');
+  border-style: solid;
 }
 
 .block-9 {
-  border: 5px dotted #f63;
-  border-radius: 10px;
-}
-
-.block-10 {
-  border: 8px double #f63;
-  border-radius: 10px;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: round round;
+  border-image-source: url('https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png');
+  border-style: solid;
 }
 
 .block-11 {
-  border: 10px groove #f63;
-  border-radius: 10px;
+  border: 12px solid transparent;
+  border-image: url('circle.png') 8 round;
+}
+
+.block-10 {
+  border-image-slice: 27 27 27 27;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url(paint.png);
 }
 
 .block-12 {
-  border: 5px solid #f63;
-  border-style: ridge;
-  border-radius: 10px;
+  border-image-slice: 27 34 27 18;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url(long-round.png);
 }
