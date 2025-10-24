@@ -1,0 +1,45 @@
+.container {
+  display: inline-block;
+  margin: 150px auto;
+}
+
+.block {
+  border: 2px solid;
+  text-align: center;
+}
+
+.interactable {
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  position: relative;
+  z-index: 2;
+}
+
+.lg {
+  opacity: 0;
+  width: 120px;
+  height: 150px;
+  background-color: blue;
+  color: black;
+  position: absolute;
+  z-index: 1;
+  left: 120px;
+  bottom: 0;
+}
+
+.wrapper {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.interactable:hover + .lg {
+  opacity: 1;
+  transition: 2s;
+}
+
+.interactable:nth-child(2):hover + .lg {
+  opacity: 1;
+  transition: 2s;
+}
