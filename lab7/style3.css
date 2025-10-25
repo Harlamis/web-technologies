@@ -1,0 +1,14 @@
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+
+ label {
+    color: white;
+ }
+
+ input,textarea {
+    color: black;
+ }
+
+ 
