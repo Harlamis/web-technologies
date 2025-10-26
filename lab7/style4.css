@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 54px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.navbar-horizontal {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-horizontal .nav-list::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.navbar-horizontal .nav-item {
+  float: left;
+  position: relative;
+}
+
+.navbar-horizontal .nav-item-right {
+  float: right;
+}
+
+.navbar-horizontal .nav-link {
+  padding: 15px 20px;
+}
+
+.navbar-horizontal .nav-link.active {
+  background-color: #00897b;
+}
+
+.navbar-horizontal .nav-link:hover {
+  background-color: #555;
+}
+
+.navbar-vertical {
+  width: 250px;
+  background-color: #2980b9;
+  color: white;
+}
+
+.navbar-vertical .nav-item {
+  position: relative;
+}
+
+.navbar-vertical .nav-link {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-vertical .nav-link .icon {
+  margin-right: 15px;
+}
+
+.navbar-vertical .nav-link .icon,
+.navbar-vertical .nav-link span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-vertical .nav-link.active {
+  background-color: #1a5276;
+}
+
+.navbar-vertical .nav-link:hover {
+  background-color: #3498db;
+}
+
+.navbar-vertical-sticky {
+  position: sticky;
+  top: 54px;
+  float: left;
+  height: calc(100vh - 54px);
+}
+
+.navbar-vertical-fixed {
+  position: fixed;
+  left: 0;
+  top: 54px;
+  height: calc(100vh - 54px);
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+  min-height: 1500px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.nav-item:hover > .submenu {
+  display: block;
+}
+
+.navbar-horizontal .submenu {
+  top: 100%;
+  left: 0;
+  background-color: #444;
+}
+
+.navbar-horizontal .submenu .nav-link:hover {
+  background-color: #666;
+}
+
+.navbar-horizontal .submenu .submenu {
+  top: 0;
+  left: 100%;
+  background-color: #555;
+}
+
+.navbar-vertical .submenu {
+  top: 0;
+  left: 100%;
+  background-color: #2c81b0;
+}
+
+.navbar-vertical .submenu .nav-link:hover {
+  background-color: #3aa9e0;
+}
+
+.navbar-vertical .submenu .submenu {
+  top: 0;
+  left: 100%;
+  background-color: #3498db;
+}
