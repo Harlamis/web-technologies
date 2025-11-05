@@ -32,6 +32,10 @@ button {
   color: pink;
 }
 
+.form-container form h2::before {
+  
+}
+
 form hr {
   width: 80%;
   border-color: yellowgreen;
