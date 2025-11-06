@@ -2,3 +2,39 @@
   --color-accent: #444444;
   --color-main: #646464;
 }
+
+.accent-text {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.sub-text {
+  color: var(--color-main);
+  font-weight: normal;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+}
+
+.current-selection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.forecast {
+  display: flex;
+}
+
+.forecast img {
+  width: 120px;
+  height: 120px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
