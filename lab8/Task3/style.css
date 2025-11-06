@@ -3,6 +3,10 @@
   --color-main: #646464;
 }
 
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .accent-text {
   color: var(--color-accent);
   font-weight: 600;
@@ -17,7 +21,7 @@
 .weather-container {
   display: flex;
   flex-direction: column;
-  width: 550px;
+  width: 350px;
   padding: 0 15px 0 15px;
 }
 
@@ -27,9 +31,12 @@
   width: 100%;
 }
 
+.current-selection h1 {
+  margin: 0;
+}
+
 .forecast {
   display: flex;
-  justify-content: space-between;
 }
 
 .forecast img {
@@ -75,6 +82,7 @@ h2 span.sub-text {
 
 .forecast-list {
   padding-left: 0;
+  margin: 0;
 }
 
 .forecast-item {
@@ -91,7 +99,10 @@ h2 span.sub-text {
 
 .forecast-item span {
   flex: 3;
-  text-align: end;
+}
+
+.pollen-count {
+  text-align: right;
 }
 
 .temp-list {
