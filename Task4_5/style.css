@@ -1,0 +1,121 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  background: #333;
+  color: white;
+  padding: 15px 5px 15px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  justify-self: start;
+  width: 100px;
+  height: 100px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.berger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    background: #222;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .berger-icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin-right: 20px;
+    z-index: 999;
+  }
+
+  .berger-icon span {
+    background: white;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .berger-icon span::before {
+    content: "";
+    background: white;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .berger-icon span::after {
+    content: "";
+    background: white;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-list li a {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  #menu-toggle:checked ~ .berger-icon + nav {
+    height: fit-content;
+  }
+}
