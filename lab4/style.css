@@ -3,10 +3,12 @@
   font-size: 20px;
   word-spacing: 40px;
 }
+
 p {
   color: green;
   text-align: center;
 }
+
 div {
   margin: auto;
 }
@@ -19,13 +21,15 @@ div {
   white-space: nowrap;
 }
 
-#P {
+#p {
   font-weight: bold;
   font-style: italic;
 }
+
 .shadow {
   text-shadow: -5px -5px 3px red;
 }
+
 .cross {
   text-decoration: line-through;
   text-transform: capitalize;

@@ -1,0 +1,20 @@
+# Ignore lab8 task folders (many duplicates / build artifacts)
+
+lab1/**
+lab2/**
+lab3/**
+lab4/**
+lab5/**
+lab6/**
+lab7/**
+lab8/Task1/**
+lab8/Task2/\*\*
+
+# Ignore common generated/build folders and node modules
+
+node_modules/\*\*
+**/build/**
+lab8/Task2/autoprefixer/\*\*
+lab8/Task2/autoprefixer/\*\*
+
+# You can add other folders or files here to exclude from stylelint

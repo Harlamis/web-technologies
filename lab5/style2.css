@@ -58,7 +58,8 @@ tbody td:first-child {
   font-weight: bold;
   font-size: 16px;
 }
-/*td:not for avoiding outer cells*/
+
+/* td:not for avoiding outer cells */
 tbody tr:nth-child(odd) td:not(:first-child) {
   background-color: #f6e6e6;
 }

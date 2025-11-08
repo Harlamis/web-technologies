@@ -1,5 +1,5 @@
 :root {
-  --color-accent: #444444;
+  --color-accent: #444;
   --color-main: #646464;
 }
 
@@ -15,14 +15,14 @@ html {
 .sub-text {
   color: var(--color-main);
   font-weight: normal;
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .weather-container {
   display: flex;
   flex-direction: column;
   width: 350px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
 .current-selection {
@@ -90,7 +90,7 @@ h2 span.sub-text {
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #646464;
-  padding: 0 5px 0 5px;
+  padding: 0 5px;
 }
 
 .forecast-item:last-child {

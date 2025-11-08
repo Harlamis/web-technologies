@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -19,7 +19,7 @@ a {
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
   padding: 20px 5px;
   display: inline-block;
   width: 100%;
@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0 0 0 / 30%);
 }
 
 .wrapper {
@@ -57,7 +57,7 @@ a:hover {
   flex: 1;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (width <= 1000px) {
   .flex-nav ul {
     flex-wrap: wrap;
   }
@@ -71,7 +71,7 @@ a:hover {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (width <= 500px) {
   .flex-nav li {
     flex-basis: 100%;
   }

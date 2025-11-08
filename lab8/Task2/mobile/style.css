@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -19,7 +19,7 @@ a {
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
   padding: 20px 5px;
   display: inline-block;
   width: 100%;
@@ -28,10 +28,10 @@ a {
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgb(0 0 0 / 30%);
 }
 
-.toggleNav {
+.toggle-nav {
   display: none;
 }
 
@@ -52,7 +52,7 @@ input {
 section,
 footer {
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
   padding: 20px;
   margin: 20px 0;
   color: white;
@@ -75,7 +75,7 @@ footer {
   flex: 1;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (width <= 1000px) {
   .flex-nav ul {
     flex-wrap: wrap;
   }
@@ -89,7 +89,7 @@ footer {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (width <= 500px) {
   .flex-nav li {
     flex-basis: 100%;
   }
@@ -107,13 +107,14 @@ footer {
     order: 1;
   }
 
-  .toggleNav {
+  .toggle-nav {
     display: block;
   }
 
   .flex-nav ul {
     display: none;
   }
+
   .flex-nav ul.open {
     display: flex;
   }
