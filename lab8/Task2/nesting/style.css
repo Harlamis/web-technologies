@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -28,10 +28,11 @@ a {
   color: white;
   text-decoration: none;
   font-size: 15px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
 }
+
 a:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgb(0 0 0 / 40%);
 }
 
 .slider-nav ul {
@@ -49,6 +50,7 @@ a:hover {
 .slider-nav .arrow {
   flex: 1;
 }
+
 .slider-nav .arrow a {
   font-size: 40px;
 }

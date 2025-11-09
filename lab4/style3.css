@@ -1,15 +1,17 @@
 a {
   color: purple;
 }
+
 .main li {
   color: green;
 }
+
 .last {
   list-style-type: square;
 }
 
 .scnd {
-  list-style-image: url(li.svg);
+  list-style-image: url("li.svg");
 }
 
 .last a {
