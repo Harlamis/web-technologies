@@ -2,18 +2,17 @@
   --select-color: rgb(206, 76, 76);
   --color-text: #6b6b6b;
   --color-title: #3a3a3a;
-  --color-meta: #9b9b9b;
-  --color-accent: #e94e38;
   --font-body: "Inter", sans-serif;
   --font-heading: "Abel", sans-serif;
 }
 
 * {
-  font-style: var(--font-body);
+  font-family: var(--font-body);
   box-sizing: border-box;
 }
 
 header {
+  font-family: var(--font-heading);
   width: 100%;
   display: flex;
   color: #333;
@@ -59,6 +58,7 @@ nav {
 
 .nav-list li {
   align-self: center;
+  margin-right: 5px;
 }
 
 .nav-list li:hover {
@@ -98,19 +98,33 @@ nav {
 }
 
 #like-btn {
-  background: red;
+  background: var(--select-color);
   margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 #like-btn a {
   padding-left: 10px;
   padding-right: 10px;
   height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 #like-btn a img {
   width: 22px;
   height: 22px;
+}
+
+#like-btn:hover {
+  background: white;
+  transform: translateY(1px);
+}
+
+#like-btn:hover a img {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(60%) saturate(677%)
+    hue-rotate(314deg) brightness(80%) contrast(104%);
 }
 
 @media (max-width: 768px) {
@@ -119,6 +133,8 @@ nav {
     left: 0;
     position: fixed;
     justify-content: space-between;
+    background: white;
+    z-index: 1000;
   }
 
   nav {
@@ -179,12 +195,32 @@ nav {
   .nav-list {
     flex-direction: column;
     padding: 20px 0;
+    align-items: stretch;
+  }
+
+  .nav-list li {
+    width: 100%;
   }
 
   .nav-list li a {
     color: white;
     padding: 15px 20px;
     border-bottom: 1px solid #444;
+    text-align: center;
+  }
+
+  #like-btn {
+    margin: 0;
+    justify-content: center;
+  }
+
+  #like-btn :hover {
+    background: #333;
+  }
+
+  #like-btn a {
+    width: 100%;
+    justify-content: center;
   }
 
   #menu-toggle:checked ~ .berger-icon + nav {
@@ -213,7 +249,7 @@ nav {
 
 .section-title::after {
   content: "--";
-  color: var(--color-accent);
+  color: var(--select-color);
   margin-left: 10px;
 }
 
@@ -250,7 +286,7 @@ nav {
 
 .card-meta {
   font-size: 11px;
-  color: var(--color-meta);
+  color: #9b9b9b;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
@@ -273,15 +309,13 @@ nav {
   overflow: hidden;
 }
 
-.journal-card .card-title {
-  transition: color 0.3s ease;
-}
 .journal-card:hover .card-title {
-  color: var(--color-accent);
+  color: var(--select-color);
 }
 
 .journal-card .card-image img {
-  transition: opacity 0.3s ease;
+  transform: translateY(1px);
+  transition: none;
 }
 .journal-card:hover .card-image img {
   opacity: 0.8;
@@ -354,9 +388,9 @@ nav {
   position: relative;
 }
 .header-title::after {
-  content: " --";
-  color: #ff0000;
-  font-weight: 700;
+  content: "--";
+  color: var(--select-color);
+  margin-left: 10px;
 }
 .filter-button {
   background-color: #ff5a5f;
@@ -524,6 +558,7 @@ nav {
 }
 
 .cta-title {
+  font-family: var(--font-heading);
   font-size: 1.3em;
   letter-spacing: 1px;
   margin-top: 0;
@@ -533,7 +568,7 @@ nav {
 .btn-cta {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #e74c3c;
+  background-color: var(--select-color);
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -670,6 +705,7 @@ nav {
 }
 
 .services-title {
+  font-family: var(--font-heading);
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -709,6 +745,7 @@ nav {
 }
 
 .service-img {
+  overflow: hidden;
   width: 140px;
   height: 140px;
   background: #e5e5e5;
@@ -722,6 +759,7 @@ nav {
 }
 
 .service-card h3 {
+  font-family: var(--font-heading);
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 15px;
