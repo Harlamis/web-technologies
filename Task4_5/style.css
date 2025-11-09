@@ -1,23 +1,41 @@
 :root {
   --select-color: rgb(206, 76, 76);
+  --color-text: #6b6b6b;
+  --color-title: #3a3a3a;
+  --color-meta: #9b9b9b;
+  --color-accent: #e94e38;
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Abel", sans-serif;
+}
+
+* {
+  font-style: var(--font-body);
+  box-sizing: border-box;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  width: 100%;
   display: flex;
   color: #333;
-  padding: 15px 5px 15px 10px;
+  padding: 15px 0x 15px 0;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 15px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  margin-right: 10px;
+}
+
+.body-container {
+  margin: 0 250px 0 250px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-logo {
@@ -87,7 +105,7 @@ nav {
 #like-btn a {
   padding-left: 10px;
   padding-right: 10px;
-  height: 22px;
+  height: 30px;
 }
 
 #like-btn a img {
@@ -97,6 +115,9 @@ nav {
 
 @media (max-width: 768px) {
   header {
+    top: 0;
+    left: 0;
+    position: fixed;
     justify-content: space-between;
   }
 
@@ -168,5 +189,291 @@ nav {
 
   #menu-toggle:checked ~ .berger-icon + nav {
     height: fit-content;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.journal-section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--color-title);
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.section-title::after {
+  content: "--";
+  color: var(--color-accent);
+  margin-left: 10px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+
+.journal-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.journal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-meta {
+  font-size: 11px;
+  color: var(--color-meta);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--color-title);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.card-snippet {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.5;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.journal-card .card-title {
+  transition: color 0.3s ease;
+}
+.journal-card:hover .card-title {
+  color: var(--color-accent);
+}
+
+.journal-card .card-image img {
+  transition: opacity 0.3s ease;
+}
+.journal-card:hover .card-image img {
+  opacity: 0.8;
+}
+
+@media (min-width: 577px) {
+  .journal-card {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .card-image {
+    flex-basis: 150px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .journal-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+
+  .journal-card {
+    flex-basis: calc(50% - 15px);
+  }
+
+  .card-image {
+    flex-basis: 150px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #555555;
+  position: relative;
+}
+.header-title::after {
+  content: " --";
+  color: #ff0000;
+  font-weight: 700;
+}
+.filter-button {
+  background-color: #ff5a5f;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.filter-button:hover {
+  background-color: #e04e52;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.gallery-item {
+  position: relative;
+  flex: 1 1 calc(33.333% - 10px);
+  max-width: calc(33.333% - 10px);
+  cursor: pointer;
+  overflow: visible;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+.hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.gallery-item:hover .hover-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-info .photo-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+  background: #222;
+}
+
+.hover-info .photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+.hover-info .plus-icon {
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+  background-color: #38bfc9;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  pointer-events: auto;
+}
+
+.hover-info .name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+.hover-info .contact {
+  font-size: 12px;
+  color: #38bfc9;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+@media (max-width: 576px) {
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
