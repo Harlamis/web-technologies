@@ -5,7 +5,7 @@ body {
   padding: 20px;
 }
 
-.grid-container {
+.container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -17,7 +17,7 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -72,13 +72,13 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-  .grid-container {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .grid-container {
+  .container {
     grid-template-columns: 1fr;
   }
   .main-card {
