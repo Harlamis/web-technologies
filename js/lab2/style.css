@@ -1,0 +1,47 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  flex: 2;
+  width: 150px;
+}
+span {
+  text-align: center;
+  flex: 1;
+  font-size: 32px;
+}
+
+#btn {
+  width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grade-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.season-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
