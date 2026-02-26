@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
     <button id="btn">Press me</button>
     <script>
       let btn = document.getElementById("btn");
-      btn.addEventListener("click", changeText);
+      btn.addEventListener("dblclick", changeText);
       function changeText() {
         let par = document.querySelector("p");
         par.innerHTML = "Hello world!";
