@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab5 - Lightbulb Control</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <h1 class="bulb-title">Lightbulb Control</h1>
+
+      <div class="bulb-container">
+        <div class="bulb" id="bulb">
+          <svg class="bulb-svg" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bulb body -->
+            <ellipse
+              cx="50"
+              cy="100"
+              rx="30"
+              ry="40"
+              fill="#f0f0f0"
+              stroke="black"
+              stroke-width="2"
+              class="bulb-body"
+            />
+            <!-- Filament -->
+            <line x1="50" y1="80" x2="50" y2="120" stroke="black" stroke-width="1" class="filament" />
+            <!-- Base -->
+            <rect x="40" y="140" width="20" height="10" fill="silver" stroke="black" stroke-width="1" />
+            <!-- Glow effect when on -->
+            <ellipse
+              cx="50"
+              cy="100"
+              rx="35"
+              ry="45"
+              fill="none"
+              stroke="yellow"
+              stroke-width="3"
+              opacity="0"
+              class="glow"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="bulb-toggle" id="bulb-toggle">Turn On</button>
+
+        <div class="select-group">
+          <label for="bulb-type-select">Bulb Type:</label>
+          <select name="bulb-type" id="bulb-type-select">
+            <option value="incandescent">Incandescent</option>
+            <option value="led">LED</option>
+            <option value="fluorescent">Fluorescent</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="timeout">Auto Off Timeout:</label>
+          <input type="number" name="timeout" id="timeout-input" />
+        </div>
+      </div>
+
+      <div class="status" id="status">Bulb is off</div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

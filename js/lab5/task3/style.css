@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.clock {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.countdown,
+.calendar,
+.birthday {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input,
+button {
+  margin: 5px;
+  padding: 5px;
+}
+
+#calendar-display {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.day {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}

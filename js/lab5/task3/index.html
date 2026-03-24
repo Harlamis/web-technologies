@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock" id="clock">00:00:00</div>
+    <div class="countdown">
+      <input type="datetime-local" id="target-date" />
+      <button id="start-countdown">Start Countdown</button>
+      <div id="countdown-display"></div>
+    </div>
+    <div class="calendar">
+      <input type="number" id="month" placeholder="Month" min="1" max="12" />
+      <input type="number" id="year" placeholder="Year" />
+      <button id="show-calendar">Show Calendar</button>
+      <div id="calendar-display"></div>
+    </div>
+    <div class="birthday">
+      <input type="date" id="birthday" />
+      <button id="set-birthday">Set Birthday</button>
+      <div id="birthday-countdown"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

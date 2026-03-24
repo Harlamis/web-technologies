@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.root {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.bulb-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bulb-container {
+  margin: 20px 0;
+}
+
+.bulb-svg {
+  width: 150px;
+  height: 225px;
+}
+
+.bulb-body {
+  transition: fill 0.3s ease;
+}
+
+.glow {
+  transition: opacity 0.3s ease;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.bulb-toggle {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.bulb-toggle:hover {
+  background-color: #45a049;
+}
+
+.select-group,
+.input-group {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select,
+input[type='number'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #666;
+}

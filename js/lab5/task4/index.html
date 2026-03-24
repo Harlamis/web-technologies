@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Accounting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="products">
+      <h2>Products</h2>
+      <div>
+        <input type="text" id="prod-id" placeholder="ID" />
+        <input type="text" id="prod-name" placeholder="Name" />
+        <input type="number" id="prod-price" placeholder="Price" />
+        <input type="number" id="prod-qty" placeholder="Quantity" />
+        <button id="add-prod">Add Product</button>
+      </div>
+      <div>
+        <input type="text" id="del-id" placeholder="ID to delete" />
+        <button id="del-prod">Delete Product</button>
+      </div>
+      <div>
+        <input type="text" id="update-id" placeholder="ID to update" />
+        <input type="text" id="update-name" placeholder="New Name" />
+        <input type="number" id="update-price" placeholder="New Price" />
+        <input type="number" id="update-qty" placeholder="New Quantity" />
+        <button id="update-prod">Update Product</button>
+      </div>
+      <div>
+        <input type="text" id="search-name" placeholder="Search by name" />
+        <button id="search-prod">Search</button>
+      </div>
+      <ul id="prod-list"></ul>
+    </div>
+    <div class="orders">
+      <h2>Orders</h2>
+      <div>
+        <input type="text" id="order-prod-id" placeholder="Product ID" />
+        <input type="number" id="order-qty" placeholder="Quantity" />
+        <button id="add-order">Add Order</button>
+      </div>
+      <ul id="order-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
