@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР 6 - Управління товарами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Управління товарами</h1>
+        <div class="total-price">Загальна вартість: <span id="js-total-price">0 ₴</span></div>
+    </header>
+
+    <main>
+        <aside class="controls">
+            <section class="filter-section">
+                <h3>Фільтрація за категорією</h3>
+                <div id="js-filter-container" class="button-group"></div>
+                <button id="js-reset-filter" class="action-btn">Скинути фільтр</button>
+            </section>
+
+            <section class="sort-section">
+                <h3>Сортування</h3>
+                <div class="button-group">
+                    <button class="sort-btn" data-sort="price">За ціною</button>
+                    <button class="sort-btn" data-sort="createdAt">За датою створення</button>
+                    <button class="sort-btn" data-sort="updatedAt">За датою оновлення</button>
+                </div>
+                <button id="js-reset-sort" class="action-btn">Скинути сортування</button>
+            </section>
+            
+            <button id="js-add-btn" class="primary-btn">Додати новий товар</button>
+        </aside>
+
+        <section id="js-product-list" class="product-grid">
+            <div id="js-empty-state" class="empty-state">Наразі список товарів пустий. Додайте новий товар.</div>
+        </section>
+    </main>
+
+    <div id="js-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="js-modal-title">Додати товар</h2>
+            <form id="js-product-form">
+                <input type="hidden" id="js-product-id">
+                
+                <div class="form-group">
+                    <label for="js-product-name">Назва товару:</label>
+                    <input type="text" id="js-product-name" required minlength="2">
+                </div>
+                
+                <div class="form-group">
+                    <label for="js-product-price">Ціна:</label>
+                    <input type="number" id="js-product-price" required min="0.01" step="0.01">
+                </div>
+                
+                <div class="form-group">
+                    <label for="js-product-category">Категорія:</label>
+                    <input type="text" id="js-product-category" required minlength="3">
+                </div>
+                
+                <div class="form-group">
+                    <label for="js-product-image">URL зображення:</label>
+                    <input type="url" id="js-product-image" required>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="primary-btn">Зберегти</button>
+                    <button type="button" id="js-close-modal" class="action-btn">Скасувати</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="js-snackbar" class="snackbar"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
