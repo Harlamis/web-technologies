@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛР 6 - To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="todo-app">
+      <header class="app-header">
+        <h1>Список завдань</h1>
+      </header>
+
+      <section class="add-task-section">
+        <form id="js-todo-form" class="todo-form">
+          <input
+            type="text"
+            id="js-task-input"
+            class="task-input"
+            placeholder="Введіть нове завдання..."
+            required
+            minlength="2"
+          />
+          <button type="submit" class="btn primary-btn">Додати</button>
+        </form>
+      </section>
+
+      <section class="sort-section">
+        <div class="button-group">
+          <button class="btn sort-btn" data-sort="createdAt">За датою додавання</button>
+          <button class="btn sort-btn" data-sort="status">За станом виконання</button>
+          <button class="btn sort-btn" data-sort="updatedAt">За датою оновлення</button>
+          <button id="js-reset-sort" class="btn action-btn">Скинути</button>
+        </div>
+      </section>
+
+      <section class="task-section">
+        <ul id="js-task-list" class="task-list"></ul>
+        <div id="js-empty-state" class="empty-state">Список завдань порожній.</div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
