@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 - Editable Grid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <span id="status-text">Натисніть «Редагувати» для керування картками</span>
+        <button id="edit-btn">Редагувати</button>
+      </header>
+
+      <main class="grid-container" id="grid">
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-yellow">JS</div>
+          <div class="title">JavaScript</div>
+          <div class="subtitle">веб / скрипти</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-green">Py</div>
+          <div class="title">Python</div>
+          <div class="subtitle">дані / AI</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-red">J</div>
+          <div class="title">Java</div>
+          <div class="subtitle">бекенд / ентерпрайз</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-blue">TS</div>
+          <div class="title">TypeScript</div>
+          <div class="subtitle">типізований JS</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-orange">R</div>
+          <div class="title">Rust</div>
+          <div class="subtitle">системи / швидкість</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-cyan">Go</div>
+          <div class="title">Go</div>
+          <div class="subtitle">хмара / мікросервіси</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-purple">K</div>
+          <div class="title">Kotlin</div>
+          <div class="subtitle">Android / JVM</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-pink">S</div>
+          <div class="title">Swift</div>
+          <div class="subtitle">iOS / macOS</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-darkblue">C++</div>
+          <div class="title">C++</div>
+          <div class="subtitle">ігри / системи</div>
+        </div>
+        <div class="card" draggable="false">
+          <button class="delete-btn">&times;</button>
+          <div class="icon bg-indigo">PHP</div>
+          <div class="title">PHP</div>
+          <div class="subtitle">веб / сервер</div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

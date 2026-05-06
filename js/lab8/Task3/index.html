@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="board">
+      <div class="column">
+        <div class="column-header bg-blue">To do</div>
+        <div class="column-body" id="todo">
+          <div class="task" draggable="true" id="task-9">Item #9</div>
+          <div class="task" draggable="true" id="task-3">Item #3</div>
+          <div class="task" draggable="true" id="task-5">Item #5</div>
+          <div class="task" draggable="true" id="task-4">Item #4</div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-header bg-orange">Working</div>
+        <div class="column-body" id="working">
+          <div class="task" draggable="true" id="task-6">Item #6</div>
+          <div class="task" draggable="true" id="task-8">Item #8</div>
+          <div class="task" draggable="true" id="task-7">Item #7</div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-header bg-green">Done</div>
+        <div class="column-body" id="done">
+          <div class="task" draggable="true" id="task-11">Item #11</div>
+          <div class="task" draggable="true" id="task-2">Item #2</div>
+          <div class="task" draggable="true" id="task-13">Item #13</div>
+          <div class="task" draggable="true" id="task-14">Item #14</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Pair Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="settings-panel">
+        <h3>Налаштування</h3>
+        <label
+          >Поле:
+          <select id="grid-size">
+            <option value="16">4 x 4</option>
+            <option value="20">5 x 4</option>
+            <option value="24">6 x 4</option>
+          </select>
+        </label>
+        <label
+          >Складність:
+          <select id="difficulty">
+            <option value="3">Easy (3 хв)</option>
+            <option value="2">Normal (2 хв)</option>
+            <option value="1">Hard (1 хв)</option>
+          </select>
+        </label>
+        <label
+          >Режим:
+          <select id="game-mode">
+            <option value="1">1 Гравець</option>
+            <option value="2">2 Гравці</option>
+          </select>
+        </label>
+        <label
+          >Раунди:
+          <input type="number" id="rounds" value="1" min="1" max="10" style="width: 50px" />
+        </label>
+        <div class="player-inputs">
+          <input type="text" id="p1-name" placeholder="Ім'я Гравця 1" value="Гравець 1" />
+          <input type="text" id="p2-name" placeholder="Ім'я Гравця 2" value="Гравець 2" style="display: none" />
+        </div>
+        <div class="controls">
+          <button id="btn-start">Почати гру</button>
+          <button id="btn-reset-settings">Скинути налаштування</button>
+        </div>
+      </div>
+
+      <div class="stats">
+        <span id="round-info">Раунд: 1 / 1</span>
+        <span>Час: <span id="timer">00:00</span></span>
+      </div>
+      <div id="player-stats" class="player-stats"></div>
+
+      <div id="board" class="board"></div>
+
+      <div id="results-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Результати гри</h2>
+          <div id="results-body"></div>
+          <button id="btn-close-modal">Закрити</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

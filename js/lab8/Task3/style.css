@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.column {
+  background-color: #f4f5f7;
+  width: 300px;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  border: 1px solid #e0e0e0;
+}
+
+.column-header {
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.bg-blue {
+  background-color: #4a90e2;
+}
+
+.bg-orange {
+  background-color: #f5a623;
+}
+
+.bg-green {
+  background-color: #2ecc71;
+}
+
+.column-body {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #333;
+  transition: opacity 0.2s ease;
+}
+
+.task:active {
+  cursor: grabbing;
+}
+
+.task.dragging {
+  opacity: 0.5;
+}
+
+.column-body.dragover {
+  background-color: #e2e4e9;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
