@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота №9</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="tabs">
+        <button id="tab-signup" class="active">Signup</button>
+        <button id="tab-login">Login</button>
+      </div>
+
+      <form id="signup-form" class="active-form">
+        <h2>Create an account</h2>
+
+        <div class="form-control">
+          <label>First Name</label>
+          <input type="text" id="firstName" placeholder="Enter first name" />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>Last Name</label>
+          <input type="text" id="lastName" placeholder="Enter last name" />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control password-wrapper">
+          <label>Password</label>
+          <input type="password" id="reg-password" placeholder="Enter password" />
+          <span class="toggle-password" onclick="togglePassword('reg-password')"><img src="eye.svg" alt="" /></span>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control password-wrapper">
+          <label>Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm password" />
+          <span class="toggle-password" onclick="togglePassword('confirm-password')"><img src="eye.svg" alt="" /></span>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>Phone</label>
+          <input type="text" id="phone" placeholder="+380..." />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>Date of Birth</label>
+          <input type="date" id="dob" />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>Sex</label>
+          <select id="sex">
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>Country</label>
+          <select id="country">
+            <option value="">Select country...</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="poland">Poland</option>
+          </select>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control">
+          <label>City</label>
+          <select id="city" disabled>
+            <option value="">Select city...</option>
+          </select>
+          <small class="error-text"></small>
+        </div>
+
+        <button type="submit" class="submit-btn">Signup</button>
+        <div id="signup-success" class="success-message"></div>
+      </form>
+
+      <form id="login-form" class="hidden-form">
+        <h2>Login here</h2>
+
+        <div class="form-control">
+          <label>Username</label>
+          <input type="text" id="login-username" placeholder="Enter username" />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control password-wrapper">
+          <label>Password</label>
+          <input type="password" id="login-password" placeholder="Enter password" />
+          <span class="toggle-password" onclick="togglePassword('login-password')"><img src="eye.svg" alt="" /></span>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-control checkbox-control">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember Me</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Login</button>
+        <div id="login-success" class="success-message"></div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  background: #e9ecef;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden-form {
+  display: none;
+}
+.active-form {
+  display: flex;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control input[type='text'],
+.form-control input[type='password'],
+.form-control input[type='date'],
+.form-control select {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-control.success input,
+.form-control.success select {
+  border-color: #28a745;
+}
+
+.form-control.error input,
+.form-control.error select {
+  border-color: #dc3545;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.form-control.error .error-text {
+  display: block;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 32px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.checkbox-control {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-control input {
+  margin-right: 10px;
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+
+.success-message {
+  color: #28a745;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
